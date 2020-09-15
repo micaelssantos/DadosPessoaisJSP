@@ -8,59 +8,89 @@ and open the template in the editor.
     Author     : Micael
 */
 html{
-	font-size: 14px;
-	font-family: arial, helvetica, sans-serif;
-	background-color: powderblue;
+	font-size: 13px;
+	font-family: arial, verdana, sans-serif;
+	background-color: azure;
 }
+
+.acesso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.acesso > a{
+    font-size: 30px;
+    font-family: arial, verdana, sans-serif;;
+    text-decoration: none;
+    padding: 25px;
+    background-color: white;
+    color: #000;
+    margin:  50px auto;
+}
+
 article{
 	width: 75%;
 	margin:  50px auto;
 
 }
+
 h1{
 	font-size: 3rem;
 	text-align: center;
 	padding: 3rem;
-	text-transform: uppercase;; 
+	text-transform: capitalize;; 
+        color: darkblue;
 }
+
 section {
 	padding: 1.5rem;
 	margin: 1rem 0;
 	background-color: white;
 	border: 2px solid #ccc;
-	border-radius: 30px;
+	border-radius: 15px;
 }
+
 section:hover{
-	background-color: cyan;
-	border-color: black;
+	background-color: #EEEEEE;
+	border-color: wheat;
 }
+
 section > h2{
 	font-size: 2rem;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0.25rem;
 	margin-bottom: 1rem;
-	color: darkcyan;
+	color: darkblue;
 }
+
 section > h3{
-	font-size: 1.25rem;
+	font-size: 2.0rem;
 	font-weight: bold; 
 }
+
 thead > tr{
 	background-color: black;
 	color: white;
 	font-weight: bold;
 }
+
 tbody > tr:nth-child(2n){
     background-color: #ccc;  
 }
+
 tbody > tr:nth-child(2n+1){
     background-color: #999;  
 }
+
 td,th{
 	padding: 5px 20px;
 }
+
 th{
 	font-weight: bold;
 }
+
 header{
 	display: flex;
 	flex-flow: row;
@@ -70,33 +100,18 @@ header > .avatar{
 	width: 30%;
 }
 .avatar > img{
-	width: 100%;
-	border-radius: 50%;
-	box-shadow: 10px 10px 7px #636363;
+	width: 75%;
+	border-radius: 5%;
+	box-shadow: 10px 10px 10px #EEEEEE;
 }
 
 header > .contato{
-	padding-left: 50px;
+    padding-left: 50px;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold;
 }
-.botaoDeAcesso {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-    
-}
-.botaoDeAcesso > a{
-    text-decoration: none;
-    border: 1px solid #000;
-    padding: 5px;
-    color:white;
-    background-color: blue;
-}
-.botaoDeAcesso > a:hover{
-	background-color: black;
-	border-color: black;
+
+span{
+    font-weight: bold;
 }
