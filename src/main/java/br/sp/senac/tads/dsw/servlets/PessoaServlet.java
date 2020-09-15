@@ -1,6 +1,7 @@
 package br.sp.senac.tads.dsw.servlets;
 
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,13 +12,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Micael Santos
  */
-@WebServlet(name = "PessoaServlet", urlPatterns = {"/PessoaServlet"})
+@WebServlet(name = "PessoaServlet", urlPatterns = {"/pessoaservlet"})
 public class PessoaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+    RequestDispatcher dispatcher = request.getRequestDispatcher("dados-pessoais.jsp");
+    dispatcher.forward(request, response);
     }
 
     @Override
